@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+
+    -webkit-font-smothing: antialiased !important; /*melhora a qualidade da fonte*/ 
+
+}
+
+li{
+    list-style: none;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+
+    background-color: coral;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.main{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+div.newPost{
+    width: 100%;
+    height: 240px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 50px 0;
+    padding: 25px;
+
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.2) ;
+}
+
+div.newPost div.infoUser{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+div.newPost div.infoUser div.imgUser{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #333;
+}
+
+
+div.newPost div.infoUser strong{
+    font-size: 16px;
+    margin-left: 10px;
+    color: blueviolet;
+}
+
+
+div.newPost form.formPost{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+div.newPost form.formPost textarea{
+    height: 90px;
+    background: #fbfbfb;
+    margin: 15px 0;
+    padding: 25px;
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+    border: 0;
+
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #727272;
+    
+}
+
+div.newPost form.formPost div.iconsAndButton{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+div.newPost form.formPost div.iconsAndButton div.icons{
+    width: 100px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.newPost form.formPost div.iconsAndButton div.icons button{
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 15px;
+    border: 0;
+    background: none;
+
+    cursor: pointer;
+
+}
+
+
+div.newPost form.formPost div.iconsAndButton button.btnSubmitForm{
+    background: orange;
+    padding: 10px 50px;
+    color: #fbfbfb;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+
+    border: 0;
+    border-radius: 10px;
+    transition: background 0.2;
+}
+
+div.newPost form.formPost div.iconsAndButton button.btnSubmitForm:hover{
+    background: blue;
+}
+
+ul.posts li.post{
+    margin-bottom: 50px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.05);
+}
+
+
+ul.posts li.post div.infoUserPost{
+    display: flex;
+    align-items: center;
+}
+
+
+ul.posts li.post div.infoUserPost div.nameAndHour{
+    margin-left: 10px;
+}
+
+ul.posts li.post div.infoUserPost div.imgUserPost{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: blue;
+}
+
+
+ul.posts li.post div.infoUserPost div.nameAndHour >strong{
+    color: blue;
+}
+
+
+ul.posts li.post div.infoUserPost div.nameAndHour >p{
+    color: aqua;
+    font-size: 12px;
+}
+
+ul.posts li.post >p{
+    width: 100%;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #727272;
+}
+
+
+ul.posts li.post div.actionBtnPost{
+    display: flex;
+    align-items: center;
+}
+
+ul.posts li.post div.actionBtnPost button.filesPost{
+    padding: 5px 20px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: background 0.2s;
+}
+
+
+ul.posts li.post div.actionBtnPost button.filesPost img{
+    margin-right: 5px;
+}
+
+.like{
+    background: red;
+}
+
+.like:hover{
+    background: palevioletred;
+}
+
+.comment{
+    background: yellow;
+}
+
+.comment:hover{
+    background: greenyellow;
+}
+
+.report{
+    background: orange;
+}
+
+.report:hover{
+    background: orangered;
+}
